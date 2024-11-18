@@ -1,14 +1,108 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 export const Navbar = () => {
   const menu = (
     <>
       <li>
-        <a>Navbar Item 1</a>
+        <NavLink to="/services">Services</NavLink>
       </li>
       <li>
-        <a>Navbar Item 2</a>
+        <NavLink to="/faqs">FAQs</NavLink>
+      </li>
+      <li>
+        <NavLink to="/blogs">Blog</NavLink>
+      </li>
+      <li>
+        <NavLink to="/about">About</NavLink>
+      </li>
+      <li>
+        <NavLink to="/contact">Contact Us</NavLink>
       </li>
     </>
+  );
+
+  const megaMenu = (
+    <ul className="menu xl:menu-horizontal bg-base-200 rounded-box lg:min-w-max">
+      <li>
+        <a>Solutions</a>
+        <ul>
+          <li>
+            <a>Design</a>
+          </li>
+          <li>
+            <a>Development</a>
+          </li>
+          <li>
+            <a>Hosting</a>
+          </li>
+          <li>
+            <a>Domain register</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a>Enterprise</a>
+        <ul>
+          <li>
+            <a>CRM software</a>
+          </li>
+          <li>
+            <a>Marketing management</a>
+          </li>
+          <li>
+            <a>Security</a>
+          </li>
+          <li>
+            <a>Consulting</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a>Products</a>
+        <ul>
+          <li>
+            <a>UI Kit</a>
+          </li>
+          <li>
+            <a>Wordpress themes</a>
+          </li>
+          <li>
+            <a>Wordpress plugins</a>
+          </li>
+          <li>
+            <a>Open source</a>
+            <ul>
+              <li>
+                <a>Auth management system</a>
+              </li>
+              <li>
+                <a>VScode theme</a>
+              </li>
+              <li>
+                <a>Color picker app</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a>Company</a>
+        <ul>
+          <li>
+            <a>About us</a>
+          </li>
+          <li>
+            <a>Contact us</a>
+          </li>
+          <li>
+            <a>Privacy policy</a>
+          </li>
+          <li>
+            <a>Press kit</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
   );
   return (
     <div>
