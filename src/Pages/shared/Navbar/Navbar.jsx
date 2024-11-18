@@ -173,7 +173,7 @@ export const Navbar = () => {
     <>
       <li className="relative group">
         <NavLink to="/services">Services</NavLink>
-        <div className="absolute  top-10 bg-base-200 hover:bg-none  left-[-250px]">
+        <div className="absolute  top-10 z-50 bg-base-200 hidden group-hover:block left-[-250px]">
           {megamenu2}
         </div>
       </li>
@@ -212,12 +212,12 @@ export const Navbar = () => {
   );
 
   return (
-    <div>
+    <div className="sticky top-0 backdrop-blur-3xl bg-[#29272763]">
       <div className="drawer">
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col">
           {/* Navbar */}
-          <div className="navbar justify-between bg-base-300 w-full ">
+          <div className="navbar justify-between backdrop-blur-3xl bg-[#29272763] absolute  w-full ">
             {/* Drawer button */}
             <div className="flex-none lg:hidden">
               <label
@@ -250,8 +250,6 @@ export const Navbar = () => {
             </div>
             <div>test</div>
           </div>
-          {/* Page content here */}
-          Content
         </div>
 
         <div className="drawer-side">
