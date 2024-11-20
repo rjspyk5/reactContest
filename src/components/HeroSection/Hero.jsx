@@ -25,16 +25,16 @@ export const Hero = () => {
         </div>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4">
-        <div className="flex justify-center items-center bg-[#4C7C00] text-white py-10 font-bold">
+        <div className="flex justify-center items-center bg-[#4C7C00] text-white py-7 font-bold">
           UK-wide service
         </div>
-        <div className="flex justify-center items-center bg-[#599000] text-white py-10 font-bold">
+        <div className="flex justify-center items-center bg-[#599000] text-white py-7 font-bold">
           UK-wide service
         </div>
-        <div className="flex justify-center items-center bg-[#65A400] text-white py-10 font-bold">
+        <div className="flex justify-center items-center bg-[#65A400] text-white py-7 font-bold">
           UK-wide service
         </div>
-        <div className="flex justify-center items-center bg-[#72B800] text-white py-10 font-bold">
+        <div className="flex justify-center items-center bg-[#72B800] text-white py-7 font-bold">
           UK-wide service
         </div>
       </div>

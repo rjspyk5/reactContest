@@ -212,12 +212,12 @@ export const Navbar = () => {
   );
 
   return (
-    <div className="sticky top-0 backdrop-blur-3xl bg-[#29272763]">
+    <div className="sticky z-50 top-0  *:text-white *:font-bold bg-[#7b7a7aa8]">
       <div className="drawer">
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col">
           {/* Navbar */}
-          <div className="navbar justify-between backdrop-blur-3xl bg-[#29272763] absolute  w-full ">
+          <div className="navbar justify-between backdrop-blur-2xl bg-[#76747458] absolute  w-full ">
             {/* Drawer button */}
             <div className="flex-none lg:hidden">
               <label

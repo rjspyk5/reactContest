@@ -8,18 +8,45 @@ export const PopularServices = () => {
   return (
     <div>
       <SectionHeader heading={"Most Popular Services"} />
-      <div className="grid gird-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <div className="relative">
           <img className="w-full h-full" src={img1} alt="" />
-          <div className="absoulte z-10 backdrop-blur-3xl bootm-0"></div>
+          <div className="absolute space-y-4 bottom-0 h-1/2 bg-[#30303051] w-full backdrop-blur-lg p-3">
+            <h1 className="text-4xl font-semibold text-white max-w-[200px]">
+              Gas Saftey Cetificates
+            </h1>
+            <div className="flex justify-center items-center">
+              <button className="btn   rounded-full bg-green-500 text-white border-white">
+                Get an instant quote
+              </button>
+            </div>
+          </div>
         </div>
         <div className="relative">
           <img className="w-full h-full" src={img2} alt="" />
-          <div className="absoulte z-10 backdrop-blur-3xl bootm-0"></div>
+          <div className="absolute space-y-4 bottom-0 h-1/2 bg-[#30303051] w-full backdrop-blur-lg p-3">
+            <h1 className="text-4xl font-semibold text-white max-w-[200px]">
+              Gas Saftey Cetificates
+            </h1>
+            <div className="flex justify-center items-center">
+              <button className="btn   rounded-full bg-green-500 text-white border-white">
+                Get an instant quote
+              </button>
+            </div>
+          </div>
         </div>
         <div className="relative">
           <img className="w-full h-full" src={img3} alt="" />
-          <div className="absoulte z-10 backdrop-blur-3xl bootm-0"></div>
+          <div className="absolute space-y-4 bottom-0 h-1/2 bg-[#30303051] w-full backdrop-blur-lg p-3">
+            <h1 className="text-4xl font-semibold text-white max-w-[200px]">
+              Gas Saftey Cetificates
+            </h1>
+            <div className="flex justify-center items-center">
+              <button className="btn   rounded-full bg-green-500 text-white border-white">
+                Get an instant quote
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
