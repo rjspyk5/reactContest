@@ -18,10 +18,24 @@ export const Hero = () => {
             <p className="mb-5">
               One-stop solution for your services. Order any service, anytime.
             </p>
-            <button className="btn   rounded-full bg-green-500 text-white">
+            <button className="btn   rounded-full bg-green-500 text-white border-white">
               Get an instant quote
             </button>
           </div>
+        </div>
+      </div>
+      <div className="grid grid-cols-2 md:grid-cols-4">
+        <div className="flex justify-center items-center bg-[#4C7C00] text-white py-10 font-bold">
+          UK-wide service
+        </div>
+        <div className="flex justify-center items-center bg-[#599000] text-white py-10 font-bold">
+          UK-wide service
+        </div>
+        <div className="flex justify-center items-center bg-[#65A400] text-white py-10 font-bold">
+          UK-wide service
+        </div>
+        <div className="flex justify-center items-center bg-[#72B800] text-white py-10 font-bold">
+          UK-wide service
         </div>
       </div>
     </div>
