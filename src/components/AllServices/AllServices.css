@@ -1,0 +1,15 @@
+.customTab {
+  --tab-padding: 4rem;
+  height: 60px;
+
+  --tab-bg: #22c55e;
+}
+.customTab:hover {
+  background-color: #22c55e;
+  color: whitesmoke;
+}
+
+.customTab:active,
+.customTab:focus {
+  color: whitesmoke;
+}
