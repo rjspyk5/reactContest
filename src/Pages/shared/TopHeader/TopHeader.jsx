@@ -2,7 +2,7 @@ import React from "react";
 
 export const TopHeader = () => {
   return (
-    <div className="flex gap-10 bg-black p-2">
+    <div className="flex gap-10 bg-black p-2 text-white">
       <marquee className="flex-1" direction="left">
         This is test
       </marquee>{" "}

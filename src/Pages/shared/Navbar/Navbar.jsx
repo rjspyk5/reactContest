@@ -241,14 +241,21 @@ export const Navbar = () => {
               </label>
             </div>
             {/* Main Drawer */}
-            <div className="mx-2  px-2">Navbar Title</div>
+            <div className="mx-2  px-2">Logo</div>
             <div className="hidden  lg:block">
               <ul className="menu menu-horizontal">
                 {/* Navbar menu content here */}
                 {menu}
               </ul>
             </div>
-            <div>test</div>
+            <div className="flex gap-4">
+              <button className="btn font-bold text-green-600  rounded-full  border-green-600 border-2 hover:border-border-green-700">
+                Track Order
+              </button>
+              <button className="btn   rounded-full bg-gradient-to-r from-[green] to-[#06a906] text-white border-none">
+                Get an instant quote
+              </button>
+            </div>
           </div>
         </div>
 

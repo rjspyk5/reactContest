@@ -2,6 +2,8 @@ import React from "react";
 import { Hero } from "../../components/HeroSection/Hero";
 import { PopularServices } from "../../components/PopularServices/PopularServices";
 import { AllServices } from "../../components/AllServices/AllServices";
+import { WhyUs } from "../../components/WhyUs/WhyUs";
+import { HowWeWork } from "../../components/HowWeWork/HowWeWork";
 
 export const Home = () => {
   return (
@@ -9,6 +11,8 @@ export const Home = () => {
       <Hero />
       <PopularServices />
       <AllServices />
+      <WhyUs />
+      <HowWeWork />
     </div>
   );
 };
