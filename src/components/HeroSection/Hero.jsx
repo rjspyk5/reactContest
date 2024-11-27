@@ -12,7 +12,7 @@ export const Hero = () => {
         <div className="hero-overlay bg-black bg-opacity-50"></div>
         <div className="hero-content text-neutral-content text-center">
           <div className="max-w-xl">
-            <h1 className="mb-5 text-5xl font-bold text-white">
+            <h1 className="mb-5 md:text-5xl text-3xl font-bold text-white">
               Your one-stop shop for property certification
             </h1>
             <p className="mb-5">

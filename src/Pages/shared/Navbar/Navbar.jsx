@@ -223,7 +223,7 @@ export const Navbar = () => {
               <label
                 htmlFor="my-drawer-3"
                 aria-label="open sidebar"
-                className="btn btn-square btn-ghost"
+                className="cursor-pointer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -239,20 +239,21 @@ export const Navbar = () => {
                   ></path>
                 </svg>
               </label>
+              <div className="px-1  lg:hidden">Logo</div>
             </div>
             {/* Main Drawer */}
-            <div className="mx-2  px-2">Logo</div>
+            <div className="px-2 hidden lg:block">Logo</div>
             <div className="hidden  lg:block">
               <ul className="menu menu-horizontal">
                 {/* Navbar menu content here */}
                 {menu}
               </ul>
             </div>
-            <div className="flex gap-4">
-              <button className="btn font-bold text-green-600  rounded-full  border-green-600 border-2 hover:border-border-green-700">
+            <div className="flex gap-2 md:gap-4">
+              <button className="btn px-2 md:px-3 min-h-2 text-sm md:text-base h-8 md:h-12 font-bold text-green-600 bg-white  rounded-full  border-green-600 border-2 hover:border-border-green-700">
                 Track Order
               </button>
-              <button className="btn   rounded-full bg-gradient-to-r from-[green] to-[#06a906] text-white border-none">
+              <button className="btn px-2 md:px-3 min-h-2 h-8 md:h-12 text-sm md:text-base  rounded-full bg-gradient-to-r from-[green] to-[#06a906] text-white border-none">
                 Get an instant quote
               </button>
             </div>
