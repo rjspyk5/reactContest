@@ -8,7 +8,7 @@ export const PopularServices = () => {
   return (
     <div>
       <SectionHeader heading={"Most Popular Services"} />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 md:gap-0">
         <div className="relative">
           <img className="w-full h-full" src={img1} alt="" />
           <div className="absolute space-y-4 bottom-0 h-1/2 bg-[#30303051] w-full backdrop-blur-lg p-3">
