@@ -4,15 +4,30 @@ import { PopularServices } from "../../components/PopularServices/PopularService
 import { AllServices } from "../../components/AllServices/AllServices";
 import { WhyUs } from "../../components/WhyUs/WhyUs";
 import { HowWeWork } from "../../components/HowWeWork/HowWeWork";
+import { Fade } from "react-awesome-reveal";
 
 export const Home = () => {
   return (
     <div>
-      <Hero />
-      <PopularServices />
-      <AllServices />
-      <WhyUs />
-      <HowWeWork />
+      <Fade>
+        {" "}
+        <Hero />
+      </Fade>
+      <Fade>
+        {" "}
+        <PopularServices />
+      </Fade>
+      <Fade>
+        {" "}
+        <AllServices />
+      </Fade>
+      <Fade>
+        {" "}
+        <WhyUs />
+      </Fade>
+      <Fade>
+        <HowWeWork />
+      </Fade>
     </div>
   );
 };

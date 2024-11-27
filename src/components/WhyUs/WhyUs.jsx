@@ -14,7 +14,7 @@ export const WhyUs = () => {
         }}
       >
         <div className="hero-overlay w-full h-full bg-opacity-50 bg-black"></div>
-        <div className="flex gap-20 p-20">
+        <div className="flex flex-col md:flex-row gap-20 md:p-20 p-10">
           <div className="w-full lg:w-50">
             <p
               style={{ lineHeight: "4rem" }}
@@ -24,7 +24,7 @@ export const WhyUs = () => {
             </p>
           </div>
           <div className="w-full lg:w-50">
-            <div className="rounded grid grid-cols-2 *:rounded-lg gap-20">
+            <div className="rounded grid grid-cols-2 *:rounded-lg gap-10 md:gap-16 lg:gap-20">
               <div className="flex-col items-center justify-center space-y-5 bg-white p-10">
                 <div className="flex justify-center">
                   <IoHome
