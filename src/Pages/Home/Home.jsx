@@ -5,6 +5,7 @@ import { AllServices } from "../../components/AllServices/AllServices";
 import { WhyUs } from "../../components/WhyUs/WhyUs";
 import { HowWeWork } from "../../components/HowWeWork/HowWeWork";
 import { Fade } from "react-awesome-reveal";
+import { ContactUs } from "../../components/ContactUs/ContactUs";
 
 export const Home = () => {
   return (
@@ -27,6 +28,9 @@ export const Home = () => {
       </Fade>
       <Fade>
         <HowWeWork />
+      </Fade>
+      <Fade>
+        <ContactUs />
       </Fade>
     </div>
   );
