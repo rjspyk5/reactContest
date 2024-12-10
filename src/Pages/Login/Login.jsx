@@ -13,38 +13,30 @@ export const Login = () => {
                 for=""
                 className="block mt-3 text-sm text-gray-700 text-center font-semibold"
               >
-                Registrate
+                Registration
               </label>
               <form method="#" action="#" className="mt-10">
                 <div>
                   <input
                     type="text"
-                    placeholder="Nombres"
-                    className="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0"
+                    placeholder="Your Name"
+                    className="mt-1 p-2 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0"
                   />
                 </div>
 
                 <div className="mt-7">
                   <input
                     type="email"
-                    placeholder="Correo electronico"
-                    className="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0"
+                    placeholder="Enter Your Email"
+                    className="mt-1 block p-2 w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0"
                   />
                 </div>
 
                 <div className="mt-7">
                   <input
                     type="password"
-                    placeholder="Contraseña"
-                    className="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0"
-                  />
-                </div>
-
-                <div className="mt-7">
-                  <input
-                    type="password"
-                    placeholder="Confirmar contraseña"
-                    className="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0"
+                    placeholder="Enter Your Password"
+                    className="mt-1 p-2 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0"
                   />
                 </div>
 
@@ -57,7 +49,7 @@ export const Login = () => {
                 <div className="flex mt-7 items-center text-center">
                   <hr className="border-gray-300 border-1 w-full rounded-md" />
                   <label className="block font-medium text-sm text-gray-600 w-full">
-                    Registrate con
+                    Register with
                   </label>
                   <hr className="border-gray-300 border-1 w-full rounded-md" />
                 </div>
