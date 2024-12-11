@@ -239,10 +239,10 @@ export const Navbar = () => {
                   ></path>
                 </svg>
               </label>
-              <div className="px-1  lg:hidden">Logo</div>
+              <div className="px-1  lg:hidden">Certify</div>
             </div>
             {/* Main Drawer */}
-            <div className="px-2 hidden lg:block">Logo</div>
+            <div className="px-2 hidden lg:block">Certify</div>
             <div className="hidden  lg:block">
               <ul className="menu menu-horizontal">
                 {/* Navbar menu content here */}
