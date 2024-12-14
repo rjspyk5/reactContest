@@ -137,7 +137,7 @@ export const ContactUs = () => {
                   <div>
                     <button
                       type="submit"
-                      className="w-full rounded border border-primary bg-primary p-3 text-white transition hover:bg-opacity-90"
+                      className="w-full rounded border border-[#22C55E] bg-[#22C55E] p-3 text-white transition hover:bg-opacity-90"
                     >
                       Send Message
                     </button>
@@ -156,7 +156,7 @@ export const ContactUs = () => {
                         fillRule="evenodd"
                         clipRule="evenodd"
                         d="M0 100C0 44.7715 0 0 0 0C55.2285 0 100 44.7715 100 100C100 100 100 100 0 100Z"
-                        fill="#3056D3"
+                        fill="#22C55E"
                       />
                     </svg>
                   </span>
