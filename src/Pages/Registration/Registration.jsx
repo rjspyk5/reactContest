@@ -3,7 +3,7 @@ import img from "../../assets/watcing.jpg";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 
-export const Login = () => {
+export const Registration = () => {
   const {
     register,
     handleSubmit,
@@ -29,10 +29,20 @@ export const Login = () => {
                 for=""
                 className="block mt-3 text-white text-xl text-center font-semibold"
               >
-                Login
+                Registration
               </label>
               <form onSubmit={handleSubmit(onSubmit)} className="mt-5">
                 <div>
+                  <input
+                    name="name"
+                    type="text"
+                    {...register("name", { required: true })}
+                    placeholder="Your Name"
+                    className="mt-1 p-2 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0 focus:outline-none placeholder-gray-400 text-slate-900"
+                  />
+                </div>
+
+                <div className="mt-7">
                   <input
                     name="email"
                     {...register("email", { required: true })}
@@ -89,12 +99,12 @@ export const Login = () => {
 
                 <div className="mt-7">
                   <div className="flex justify-center items-center">
-                    <label className="mr-2">New Here?</label>
+                    <label className="mr-2">Already have an account?</label>
                     <Link
-                      to="/registration"
+                      to="/login"
                       className=" text-blue-500 transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105"
                     >
-                      Register Now
+                      Login Now
                     </Link>
                   </div>
                 </div>

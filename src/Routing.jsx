@@ -3,6 +3,7 @@ import { Rootlayout } from "./layout/Rootlayout";
 import { Home } from "./Pages/Home/Home";
 import { createBrowserRouter } from "react-router-dom";
 import { Login } from "./Pages/Login/Login";
+import { Registration } from "./Pages/Registration/Registration";
 
 export const Routing = createBrowserRouter([
   {
@@ -10,6 +11,7 @@ export const Routing = createBrowserRouter([
     element: <Rootlayout />,
     children: [
       { path: "", element: <Home /> },
+      { path: "/registration", element: <Registration /> },
       { path: "/login", element: <Login /> },
     ],
   },
