@@ -65,7 +65,7 @@ export const Login = () => {
                   <input
                     type="submit"
                     value="Register"
-                    className="bg-green-500 w-full py-3 rounded-xl text-white shadow-xl hover:shadow-inner focus:outline-none transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105"
+                    className="bg-green-500 w-full py-3 rounded-xl text-white shadow-xl hover:shadow-inner focus:outline-none transition duration-500 ease-in-out  transform hover:-translate-x hover:bg-green-400 cursor-pointer"
                   />
                 </div>
 
@@ -92,7 +92,7 @@ export const Login = () => {
                     <label className="mr-2">New Here?</label>
                     <Link
                       to="/registration"
-                      className=" text-blue-500 transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105"
+                      className=" text-blue-500 transition duration-500 ease-in-out  transform hover:scale-105"
                     >
                       Register Now
                     </Link>

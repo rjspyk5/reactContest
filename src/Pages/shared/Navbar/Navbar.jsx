@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 export const Navbar = () => {
   const megaMenu = (
     <ul className="menu  bg-base-200 rounded-box lg:min-w-max">
@@ -239,10 +239,14 @@ export const Navbar = () => {
                   ></path>
                 </svg>
               </label>
-              <div className="px-1  lg:hidden">Certify</div>
+              <Link to="/" className="px-1  lg:hidden">
+                Certify
+              </Link>
             </div>
             {/* Main Drawer */}
-            <div className="px-2 hidden lg:block">Certify</div>
+            <Link to="/" className="px-2 hidden lg:block">
+              Certify
+            </Link>
             <div className="hidden  lg:block">
               <ul className="menu menu-horizontal">
                 {/* Navbar menu content here */}
