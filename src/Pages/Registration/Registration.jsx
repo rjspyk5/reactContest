@@ -2,15 +2,37 @@ import React from "react";
 import img from "../../assets/watcing.jpg";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import { BiLogOut } from "react-icons/bi";
+import { useAuth } from "../../hooks/useAuth";
+import Swal from "sweetalert2";
 
 export const Registration = () => {
+  const { logOut, signUp } = useAuth();
   const {
     register,
     handleSubmit,
     watch,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = async (data) => {
+    const { email, password } = data;
+    try {
+      const result = await signUp(email, password);
+      if (result) {
+        Swal.fire({
+          icon: "success",
+          title: "Registration Sucessfull",
+          timer: 2000,
+        });
+        logOut();
+      }
+    } catch (er) {
+      Swal.fire({
+        icon: "error",
+        title: `${er}`,
+      });
+    }
+  };
   return (
     <div>
       <div className="font-sans">
@@ -26,7 +48,7 @@ export const Registration = () => {
             <div className="card bg-[#29292923] backdrop-blur-xl  shadow-lg  w-full h-full rounded-3xl absolute  transform rotate-6"></div>
             <div className="relative w-full rounded-3xl   px-6 py-4 bg-[#d7d7d70a] backdrop-blur shadow-md">
               <label
-                for=""
+                htmlFor=""
                 className="block mt-3 text-white text-xl text-center font-semibold"
               >
                 Registration

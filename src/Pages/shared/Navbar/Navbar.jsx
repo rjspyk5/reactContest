@@ -1,6 +1,8 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
+import { useAuth } from "../../../hooks/useAuth";
 export const Navbar = () => {
+  const { user, logOut } = useAuth();
   const megaMenu = (
     <ul className="menu  bg-base-200 rounded-box lg:min-w-max">
       <li>
@@ -254,12 +256,27 @@ export const Navbar = () => {
               </ul>
             </div>
             <div className="flex gap-2 md:gap-4">
-              <button className="btn px-2 md:px-3 min-h-2 text-sm md:text-base h-8 md:h-12 font-bold text-green-600 bg-white  rounded-full  border-green-600 border-2 hover:border-border-green-700">
+              {/* <button className="btn px-2 md:px-3 min-h-2 text-sm md:text-base h-8 md:h-12 font-bold text-green-600 bg-white  rounded-full  border-green-600 border-2 hover:border-border-green-700">
                 Track Order
               </button>
               <button className="btn px-2 md:px-3 min-h-2 h-8 md:h-12 text-sm md:text-base  rounded-full bg-gradient-to-r from-[green] to-[#06a906] text-white border-none">
                 Get an instant quote
-              </button>
+              </button> */}
+              {user ? (
+                <button
+                  onClick={() => logOut()}
+                  className="btn px-2 md:px-4 min-h-2 h-8 md:h-10 text-sm md:text-base  rounded bg-gradient-to-r from-[green] to-[#0fd80f] text-white border-none hover:bg-gradient-to-br transition duration-300 ease-in-out"
+                >
+                  Logout
+                </button>
+              ) : (
+                <Link
+                  to="/login"
+                  className="btn px-2 md:px-4 min-h-2 h-8 md:h-10 text-sm md:text-base  rounded bg-gradient-to-r from-[green] to-[#0fd80f] text-white border-none hover:bg-gradient-to-br transition duration-300 ease-in-out"
+                >
+                  Login
+                </Link>
+              )}
             </div>
           </div>
         </div>
