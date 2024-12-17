@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { useAuth } from "../../../hooks/useAuth";
 export const Navbar = () => {
   const { user, logOut } = useAuth();
+
   const megaMenu = (
     <ul className="menu  bg-base-200 rounded-box lg:min-w-max">
       <li>
@@ -191,6 +192,11 @@ export const Navbar = () => {
       <li>
         <NavLink to="/contact">Contact Us</NavLink>
       </li>
+      {user && (
+        <li>
+          <NavLink to="/dashboard">Dashboard</NavLink>
+        </li>
+      )}
     </>
   );
   const menu2 = (
@@ -210,6 +216,11 @@ export const Navbar = () => {
       <li>
         <NavLink to="/contact">Contact Us</NavLink>
       </li>
+      {user && (
+        <li>
+          <NavLink to="/dashboard">Dashboard</NavLink>
+        </li>
+      )}
     </>
   );
 

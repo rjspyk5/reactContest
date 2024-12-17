@@ -4,6 +4,7 @@ import { Home } from "./Pages/Home/Home";
 import { createBrowserRouter } from "react-router-dom";
 import { Login } from "./Pages/Login/Login";
 import { Registration } from "./Pages/Registration/Registration";
+import { DashboardLayout } from "./layout/dashboardLayout";
 
 export const Routing = createBrowserRouter([
   {
@@ -15,4 +16,5 @@ export const Routing = createBrowserRouter([
       { path: "/login", element: <Login /> },
     ],
   },
+  { path: "/dashboard", element: <DashboardLayout /> },
 ]);

@@ -5,9 +5,11 @@ import { useForm } from "react-hook-form";
 import { BiLogOut } from "react-icons/bi";
 import { useAuth } from "../../hooks/useAuth";
 import Swal from "sweetalert2";
+import { useAxiosPublic } from "./../../hooks/useAxiosPublic";
 
 export const Registration = () => {
   const { logOut, signUp } = useAuth();
+  const axiosPublic = useAxiosPublic();
   const {
     register,
     handleSubmit,
@@ -16,15 +18,19 @@ export const Registration = () => {
   } = useForm();
   const onSubmit = async (data) => {
     const { email, password } = data;
+
     try {
       const result = await signUp(email, password);
       if (result) {
-        Swal.fire({
-          icon: "success",
-          title: "Registration Sucessfull",
-          timer: 2000,
-        });
-        logOut();
+        const dbresult = await axiosPublic.post("/register", data);
+        if (dbresult?.data) {
+          Swal.fire({
+            icon: "success",
+            title: "Registration Sucessfull",
+            timer: 2000,
+          });
+          logOut();
+        }
       }
     } catch (er) {
       Swal.fire({
