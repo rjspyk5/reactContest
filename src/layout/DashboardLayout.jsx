@@ -3,6 +3,14 @@ import React from "react";
 import { useAuth } from "../hooks/useAuth";
 import { DrawerForAdmin } from "../components/DrawerForAdmin/DrawerForAdmin";
 import { Link, NavLink, Outlet } from "react-router-dom";
+import profile from "../assets/profile.png";
+import { TbDashboardFilled } from "react-icons/tb";
+import logo from "../assets/logo.png";
+import { FaRegCalendarCheck, FaUser, FaUserNinja } from "react-icons/fa";
+
+import { MdHelp } from "react-icons/md";
+import { IoMdChatbubbles } from "react-icons/io";
+
 export const DashboardLayout = () => {
   const { userDetails, isLoading } = useUser();
   console.log(isLoading, userDetails);
@@ -19,7 +27,7 @@ export const DashboardLayout = () => {
           }
           end
         >
-          Dashboard
+          <TbDashboardFilled /> Dashboard
         </NavLink>
       </li>
       <li>
@@ -32,7 +40,7 @@ export const DashboardLayout = () => {
           }
           end
         >
-          Manage Flights
+          <FaRegCalendarCheck /> Appoinments
         </NavLink>
       </li>
 
@@ -47,7 +55,7 @@ export const DashboardLayout = () => {
           }
           end
         >
-          All Bookings
+          <FaUser /> My Details
         </NavLink>
       </li>
 
@@ -61,7 +69,33 @@ export const DashboardLayout = () => {
           }
           end
         >
-          Admin Profile
+          <MdHelp /> Help
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/admin/profile"
+          className={({ isActive }) =>
+            `${
+              isActive && "bg-primary !text-white"
+            } hover:bg-primary hover:text-white text-black focus:!bg-primary transition-colors duration-500 ease-linear`
+          }
+          end
+        >
+          <IoMdChatbubbles /> Feedback
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/admin/profile"
+          className={({ isActive }) =>
+            `${
+              isActive && "bg-primary !text-white"
+            } hover:bg-primary hover:text-white text-black focus:!bg-primary transition-colors duration-500 ease-linear`
+          }
+          end
+        >
+          <FaUserNinja /> Subcontractors
         </NavLink>
       </li>
     </>
@@ -72,7 +106,7 @@ export const DashboardLayout = () => {
         {/* left side menu*/}
         <div className="w-[23%] hidden lg:block bg-slate-200 fixed top-0 h-full bg-gradient-to-br ">
           <div className="py-4 px-8">
-            <img className="w-20 h-8" src="" alt="" />
+            <img className="w-20 h-8" src={logo} alt="Certify" />
           </div>
 
           <hr />
@@ -84,7 +118,7 @@ export const DashboardLayout = () => {
           {/* Navbar */}
           <div className="flex sticky top-0 w-full justify-between items-center pt-2 pb-[7px]  bg-slate-200  ">
             <DrawerForAdmin menu={menu} />
-            <img className="w-20 h-8 lg:hidden" src="" alt="" />
+            <img className="w-20 h-8 lg:hidden" src={logo} alt="" />
             <div className="dropdown dropdown-end ">
               <div
                 tabIndex={0}
@@ -92,7 +126,7 @@ export const DashboardLayout = () => {
                 className="btn btn-ghost btn-circle avatar"
               >
                 <div className="w-10 rounded-full">
-                  <img alt="profile" src="" />
+                  <img alt="profile" src={profile} />
                 </div>
               </div>
               <ul
